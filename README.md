@@ -1,6 +1,8 @@
-## Foundry
+# shadowsettle_contracts
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Solidity smart contracts for **ShadowSettle**: `Settlement` (deposit, withdraw, batch payout with attestation replay protection) and **TestUSDC** for Arbitrum Sepolia.
+
+Part of the [ShadowSettle](https://github.com/ShadowSettle/ShadowSettle) monorepo. Built with **Foundry**.
 
 Foundry consists of:
 

@@ -69,11 +69,10 @@ contract Settlement {
     /// @param recipients Array of recipient addresses.
     /// @param amounts Array of amounts (same length as recipients).
     /// @param attestation TEE attestation proof (used only for replay protection; not verified on-chain).
-    function settleBatch(
-        address[] calldata recipients,
-        uint256[] calldata amounts,
-        bytes calldata attestation
-    ) external onlyExecutor {
+    function settleBatch(address[] calldata recipients, uint256[] calldata amounts, bytes calldata attestation)
+        external
+        onlyExecutor
+    {
         if (recipients.length == 0) revert ZeroLength();
         if (recipients.length != amounts.length) revert LengthMismatch();
 
